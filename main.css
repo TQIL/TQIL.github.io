@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(background.jpg);
+}
+
+.main{
+
+    width: 00px;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.548);
+    margin-top: 5px;
+}
+.jednaradek{
+    display: inline-block;
+    height: 400px;
+    /* background-color: blue; */
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.dvaradek{
+    height: 400px;
+    /* background-color: yellow; */
+    padding: 0;
+    margin: 0;
+}
+.jednatemaspan{
+    display: inline-block;
+    width: 305px;
+    height: 400px;
+    background-color: rgb(214, 255, 0);
+    padding: 0;
+    margin-left: 20px;
+}
+.dvatemaspan{
+    display: inline-block;
+    width: 305px;
+    height: 400px;
+    background-color: rgb(255, 162, 0);
+    padding: 0;
+    margin: 0;
+}
+.tritemaspan{
+    display: inline-block;
+    width: 305px;
+    height: 400px;
+    background-color: rgb(255, 78, 0);
+    padding: 0;
+    margin: 0;
+}
+.ctyritemaspan{
+    display: inline-block;
+    width: 305px;
+    height: 400px;
+    background-color: rgb(255, 6, 0);
+    padding: 0;
+    margin: 0;
+}
+.pettemaspan{
+    display: inline-block;
+    width: 305px;
+    height: 400px;
+    background-color: rgb(94, 0, 255);
+    margin-left: 20px;
+    padding: 0;
+}
+.sesttemaspan{
+    display: inline-block;
+    width: 305px;
+    height: 400px;
+    background-color: rgb(58, 0, 255);
+    padding: 0;
+    margin: 0;
+}
+.sedmtemaspan{
+    display: inline-block;
+    width: 305px;
+    height: 400px;
+    background-color: rgb(34, 0, 255);
+    padding: 0;
+    margin: 0;
+}
+.osmtemaspan{
+    display: inline-block;
+    width: 305px;
+    height: 400px;
+    background-color: rgb(51, 128, 230);
+    padding: 0;
+    margin: 0;
+}
+
+.temanazvy{
+    width: 305px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+.prvnitlacitka{
+    width: 305px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: rgb(214, 255, 0) 3px solid;
+}
+.prvnitlacitka:hover{
+    background-color: rgb(143,171,0);
+}
+.druhetlacitka{
+    width: 305px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: rgb(255, 162, 0) 3px solid;
+}
+.druhetlacitka:hover{
+    background-color: rgb(183, 116, 0);
+}
+.tretitlacitka{
+    width: 305px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: rgb(255, 78, 0) 3px solid;
+}
+.tretitlacitka:hover{
+    background-color: rgb(105,39,11);
+}
+.ctvrtetlacitka{
+    width: 305px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: rgb(255, 6, 0) 3px solid;
+}
+.ctvrtetlacitka:hover{
+    background-color: rgb(188,81,114);
+}
+.patetlacitka{
+    width: 305px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: rgb(94, 0, 255) 3px solid;
+}
+.patetlacitka:hover{
+    background-color: rgb(118, 0, 255);
+}
+.sestetlacitka{
+    width: 305px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: rgb(70, 0, 237) 3px solid;
+}
+.sestetlacitka:hover{
+    background-color: rgb(76, 26, 195);
+}
+.sedmetlacitka{
+    width: 305px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: rgb(34, 0, 255) 3px solid;
+}
+.sedmetlacitka:hover{
+    background-color: rgb(25,11,113);
+}
+.osmetlacitka{
+    width: 305px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: rgb(51, 128, 230) 3px solid;
+}
+.osmetlacitka:hover{
+    background-color: rgb(0, 97, 227);
+}
+#questiondiv{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    width: 1700Px;
+    height: 810px;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+  }
+#questiontitle{
+    text-align: center;
+    font-size: 50px;
+}
+#questiontext{
+    font-size: 45px;
+    text-align: center;
+}
+
+#ukaz_odpoved{
+    background-color: blue;
+    width: 200px;
+    height: 50px;
+    border-radius: 35px;
+    margin-left: 553px ;
+}
+#odpoved{
+    font-size: 35px;
+    text-align: center;
+    font: bold;
+}
+#plus_body{
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 30px;
+    background-color: green;
+    
+}
+#schovat_div{
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 30px;
+    background-color: red;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Fyzika, kvíz">
+    <meta name="author" content="TQUIL">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="aTom.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script src="main.js"></script>
+    <title>Tqil - Hra</title>
+</head>
+<body onload="teamstatus()">
+<div class="container-fluid">
+        <div class="header" style="background-color: rgba(0, 0, 0, 0.158); width: auto; height: 115px; margin: 0; padding: 0;">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="headerone">
+                        <h1 style="font-size: 45px;" id="titletymjedna">Tým 1</h1>
+                        <button style="font-size: 40px; background: none; border: none;" id="counterone">0</button>
+                        
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="headertwo">
+                        <h1 style="font-size: 45px;" id="titletymdva">Tým 2</h1>
+                        <p style="font-size: 40px;" id="countertwo">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main container">
+            <div class="jednaradek">
+                <div class="jednatemaspan">
+                    <h2 class="temanazvy text-center">Síla</h2>
+                    <button class="prvnitlacitka jj" id="buttondn" onclick="jj()"><b>5</b></button>
+                    <button class="prvnitlacitka jd" id="buttondn" onclick="jd()"><b>10</b></button>
+                    <button class="prvnitlacitka jt" id="buttondn" onclick="jt()"><b>15</b></button>
+                </div>
+                <div class="dvatemaspan">
+                    <h2 class="temanazvy text-center">Hmotnost</h2>
+                        
+                    <button class="druhetlacitka dj" id="buttondn" onclick="dj()"><b>5</b></button>
+                    <button class="druhetlacitka dd" id="buttondn" onclick="dd()"><b>10</b></button>
+                    <button class="druhetlacitka dt" id="buttondn" onclick="dt()"><b>15</b></button>
+                </div>
+                <div class="tritemaspan">
+                    <h2 class="temanazvy text-center">Rychlost</h2>
+                    <button class="tretitlacitka tj" id="buttondn" onclick="tj()"><b>5</b></button>
+                    <button class="tretitlacitka td" id="buttondn" onclick="td()"><b>10</b></button>
+                    <button class="tretitlacitka tt" id="buttondn" onclick="tt()"><b>15</b></button>
+                </div>
+                <div class="ctyritemaspan">
+                    <h2 class="temanazvy text-center">Hustota</h2>
+                    <button class="ctvrtetlacitka" id="buttondn" onclick="cj()"><b>5</b></button>
+                    <button class="ctvrtetlacitka" id="buttondn" onclick="cd()"><b>10</b></button>
+                    <button class="ctvrtetlacitka" id="buttondn" onclick="ct()"><b>15</b></button>
+                </div>
+            </div>
+            <div class="dvaradek">
+                <div class="pettemaspan">
+                    <h2 class="temanazvy text-center">Kladky</h2>
+                    <button class="patetlacitka" id="buttondn" onclick="pj()"><b>5</b></button>
+                    <button class="patetlacitka" id="buttondn" onclick="pd()"><b>10</b></button>
+                    <button class="patetlacitka" id="buttondn" onclick="pt()"><b>15</b></button>
+
+                </div>
+                <div class="sesttemaspan">
+                    <h2 class="temanazvy text-center">Páky</h2>
+                    <button class="sestetlacitka" id="buttondn" onclick="sj()"><b>5</b></button>
+                    <button class="sestetlacitka" id="buttondn" onclick="sd()"><b>10</b></button>
+                    <button class="sestetlacitka" id="buttondn" onclick="st()"><b>15</b></button>
+
+                </div>
+                <div class="sedmtemaspan">
+                    <h2 class="temanazvy text-center">Tlak</h2>
+                    <button class="sedmetlacitka" id="buttondn" onclick="sej()"><b>5</b></button>
+                    <button class="sedmetlacitka" id="buttondn" onclick="sed()"><b>10</b></button>
+                    <button class="sedmetlacitka" id="buttondn" onclick="set()"><b>15</b></button>
+
+                </div>
+                <div class="osmtemaspan">
+                    <h2 class="temanazvy text-center">Magnety</h2>
+                    <button class="osmetlacitka" id="buttondn" onclick="oj()"><b>5</b></button>
+                    <button class="osmetlacitka" id="buttondn" onclick="od()"><b>10</b></button>
+                    <button class="osmetlacitka" id="buttondn" onclick="ot()"><b>15</b></button>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="questiondiv" class="container">
+                <h1 id="questiontitle">Nadpis</h1>
+                <p id="questiontext">Otazka</p><br>
+                <button id="plus_body" onclick="soundcorrect(); disableDiv(), teamstatus()">Správně</button>
+                <button id="schovat_div" onclick="soundincorrect(); disableDiv(), teamstatus()">Špatně!</button>
+            </div>
+</div>
+</body>
+</html>
