@@ -214,7 +214,8 @@ body{
     border-radius: 50px;
     font-size: 30px;
     background-color: green;
-    
+    margin-top: 300px;
+    margin-left: 430px;
 }
 #schovat_div{
     width: 200px;
@@ -222,4 +223,29 @@ body{
     border-radius: 50px;
     font-size: 30px;
     background-color: red;
+    margin-left: 50px;
+}
+
+#winnerdiv{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    width: 1920px;
+    height: 810px;
+    background-color: rgb(4, 76, 100);
+    margin: 0;
+    padding: 0;
+  }
+#rlbtn{
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 250px;
+    margin-left: 550px;
+}
+#winnertext{
+    color: aquamarine;
+    font-size: 150px;
+    text-align: center;
 }
